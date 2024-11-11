@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/gorpher/gowin32/session_notifications"
+	"github.com/Alikk1/gowin32/session_notifications"
 	"log"
 )
 

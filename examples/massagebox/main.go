@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/gorpher/gowin32/wrappers"
+	"github.com/Alikk1/gowin32/wrappers"
 )
 
 func main() {

@@ -3,8 +3,8 @@ package main
 import (
 	"errors"
 	"fmt"
-	"github.com/gorpher/gowin32"
-	"github.com/gorpher/gowin32/wrappers"
+	"github.com/Alikk1/gowin32"
+	"github.com/Alikk1/gowin32/wrappers"
 	"strings"
 )
 

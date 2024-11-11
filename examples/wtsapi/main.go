@@ -4,7 +4,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/gorpher/gowin32"
+	"github.com/Alikk1/gowin32"
 	"time"
 )
 

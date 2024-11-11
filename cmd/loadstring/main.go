@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/gorpher/gowin32"
-	"github.com/gorpher/gowin32/win"
+	"github.com/Alikk1/gowin32"
+	"github.com/Alikk1/gowin32/win"
 	"syscall"
 )
 

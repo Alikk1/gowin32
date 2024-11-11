@@ -18,7 +18,7 @@ package wrappers
 
 import (
 	"fmt"
-	"github.com/gorpher/gowin32/win"
+	"github.com/Alikk1/gowin32/win"
 	"syscall"
 	"unsafe"
 )

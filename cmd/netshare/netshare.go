@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/gorpher/gowin32"
+	"github.com/Alikk1/gowin32"
 )
 
 func main() {

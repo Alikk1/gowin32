@@ -1,6 +1,6 @@
 package gowin32
 
-import "github.com/gorpher/gowin32/wrappers"
+import "github.com/Alikk1/gowin32/wrappers"
 
 func WNetAddConnection(szRemoteName, szLocalName, username, password string, flag uint32) error {
 	ns := wrappers.NETRESOURCE{

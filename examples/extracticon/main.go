@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/gorpher/gowin32"
+	"github.com/Alikk1/gowin32"
 	"image/png"
 	"os"
 )

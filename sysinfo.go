@@ -20,7 +20,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/gorpher/gowin32/wrappers"
+	"github.com/Alikk1/gowin32/wrappers"
 )
 
 type ProcessorArchitecture uint16

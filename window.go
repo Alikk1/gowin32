@@ -19,7 +19,7 @@ package gowin32
 import (
 	"syscall"
 
-	"github.com/gorpher/gowin32/wrappers"
+	"github.com/Alikk1/gowin32/wrappers"
 )
 
 func EnumDesktops(winsta syscall.Handle) ([]string, error) {

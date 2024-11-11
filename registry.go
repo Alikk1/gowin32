@@ -17,8 +17,8 @@
 package gowin32
 
 import (
-	"github.com/gorpher/gowin32/win"
-	"github.com/gorpher/gowin32/wrappers"
+	"github.com/Alikk1/gowin32/win"
+	"github.com/Alikk1/gowin32/wrappers"
 	"syscall"
 	"unsafe"
 )

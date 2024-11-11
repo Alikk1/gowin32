@@ -17,7 +17,7 @@
 package gowin32
 
 import (
-	"github.com/gorpher/gowin32/wrappers"
+	"github.com/Alikk1/gowin32/wrappers"
 
 	"errors"
 	"fmt"

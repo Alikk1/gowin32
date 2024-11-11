@@ -3,45 +3,45 @@
 // Receive session change notifications from Windows.
 //
 // Example
-//     package main
 //
-//     import (
-//     	"github.com/gorpher/gowin32/session_notifications"
-//     	"log"
-//     )
+//	package main
 //
-//     func main() {
-//     	quit := make(chan int)
+//	import (
+//		"github.com/Alikk1/gowin32/session_notifications"
+//		"log"
+//	)
 //
-//     	chanMessages := make(chan session_notifications.Message, 100)
-//     	chanClose := make(chan int)
+//	func main() {
+//		quit := make(chan int)
 //
-//     	go func() {
-//     		for {
-//     			select {
-//     			case m := <-chanMessages:
-//     				switch m.UMsg {
-//     				case session_notifications.WM_WTSSESSION_CHANGE:
-//     					switch m.Param {
-//     					case session_notifications.WTS_SESSION_LOCK:
-//     						log.Println("session locked")
-//     					case session_notifications.WTS_SESSION_UNLOCK:
-//     						log.Println("session unlocked")
-//     					}
-//     				case session_notifications.WM_QUERYENDSESSION:
-//     					log.Println("log off or shutdown")
-//     				}
-//     				close(m.ChanOk)
-//     			}
-//     		}
-//     	}()
+//		chanMessages := make(chan session_notifications.Message, 100)
+//		chanClose := make(chan int)
 //
-//     	session_notifications.Subscribe(chanMessages, chanClose)
+//		go func() {
+//			for {
+//				select {
+//				case m := <-chanMessages:
+//					switch m.UMsg {
+//					case session_notifications.WM_WTSSESSION_CHANGE:
+//						switch m.Param {
+//						case session_notifications.WTS_SESSION_LOCK:
+//							log.Println("session locked")
+//						case session_notifications.WTS_SESSION_UNLOCK:
+//							log.Println("session unlocked")
+//						}
+//					case session_notifications.WM_QUERYENDSESSION:
+//						log.Println("log off or shutdown")
+//					}
+//					close(m.ChanOk)
+//				}
+//			}
+//		}()
 //
-//     	// ctrl+c to quit
-//     	<-quit
-//     }
+//		session_notifications.Subscribe(chanMessages, chanClose)
 //
+//		// ctrl+c to quit
+//		<-quit
+//	}
 package session_notifications
 
 // #cgo LDFLAGS: -lwtsapi32
