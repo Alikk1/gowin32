@@ -1,4 +1,4 @@
-module github.com/gorpher/gowin32
+module github.com/Alikk1/gowin32
 
 go 1.18
 
